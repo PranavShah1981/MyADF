@@ -1,0 +1,35 @@
+{
+	"name": "AzureSqlTable1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "id",
+				"type": "bigint",
+				"precision": 19
+			},
+			{
+				"name": "title",
+				"type": "varchar"
+			},
+			{
+				"name": "userld",
+				"type": "bigint",
+				"precision": 19
+			},
+			{
+				"name": "completed",
+				"type": "bit"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "FinalTable"
+		}
+	}
+}
